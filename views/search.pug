@@ -1,11 +1,11 @@
 extends layout
 
 block title
-  title 搜索结果 —— 食谱网
+  title Search result —— Recipes net
 
 block content
   div(class="container")
-    //h4(class="text-center") 共有 #{ totalNum } 个结果
+    //h4(class="text-center") A total of #{ totalNum } results
     hr
     p(class="my-3") #{ info }
     div(class="card-columns")
@@ -24,10 +24,10 @@ block content
     //  ul(class="pagination justify-content-center")
     //    if pn === 0
     //      li(class="page-item disabled")
-    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn}` tabindex="-1") 上一页
+    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn}` tabindex="-1") Previous page
     //    else
     //      li(class="page-item")
-    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn - 30}` tabindex="-1") 上一页
+    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn - 30}` tabindex="-1") Next page
     //
     //    if totalNumPage >= 20
     //      if pn < 90
@@ -68,7 +68,7 @@ block content
     //
     //    if pn === (i-1) * 30
     //      li(class="page-item disabled")
-    //        a(class="page-link" href="#") 下一页
+    //        a(class="page-link" href="#") Next page
     //    else
     //      li(class="page-item")
-    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn + 30}`) 下一页
+    //        a(class="page-link" href=`/search?foodName=${foodName}&pn=${pn + 30}`) Next page
